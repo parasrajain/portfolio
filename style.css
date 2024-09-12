@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.nav-hero{
+    height: 100vh;
+    width: 100%;
+}
+
+/* nav bar */
+.outer-nav{
+   
+    width: 100vw;
+    height: 5.6rem;
+    background-color: wheat;
+}
+
+.nav{
+    width: 90%;
+    max-width: 75rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+.links{
+    display: flex; 
+    gap: 30px;  
+}
+
+.name{
+    font-size: 40px;
+}
+
+.home a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* hero section */
+.hero-outer{
+    width: 100vw;
+    height: 100%;
+   
+}
+.hero{
+    position: relative;
+    /* display: flex; */
+    max-width: 75rem;
+    height: 100vh ;
+    margin: auto;
+
+}
+.faded-Paras{
+    position: absolute;
+    bottom: -61.5rem;
+    left: 0rem;
+    bottom: 4.1rem;
+    user-select: none;
+    color: rgb(231, 231, 231);
+    font-weight: bold;
+    font-size: 100px;
+}
+.aboutsec{
+    display: flex;align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    padding-top: 3.5rem;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    gap: 3.5rem;
+}
+
+.hello{
+    font-size: 40px;
+    color: red;
+    font-weight: 600;
+}
+
+.intro{
+    font-size: 25px;
+}
+
+.resume-btn{
+    display: flex;
+    height: 2.5rem;
+    width: 6.25rem;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color:#eedbce;
+    border: 2px black;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+.resume-btn:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.hero-right{
+    position: relative;
+}
+
+.cube-icon {
+    position: absolute;
+    z-index: 1;
+    top: -0.3em;
+    right: 1.4em;
+    animation-name: cubeRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.zigzag-icon{
+    position: absolute;
+    z-index: 10;
+    top: 3em;
+    left: -0.3em;
+    animation: zigzakAnimation 5s ease-in infinite;
+}
+
+.dot-icon {
+    z-index: 9;
+    position: absolute;
+    bottom: -2rem;
+    right: -1rem;
+    animation-name: dotsAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dotsAnimation {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes zigzakAnimation {
+   
+   
+        50% {
+            top: 2%;
+            left: 5%;
+        }   
+}
+
+@keyframes cubeRotate {
+    0%{
+        transform: rotateY(0deg) translateY(0px);
+    }
+    50%{
+        transform: rotateY(180deg) translateY(-12px);
+    }
+    100%{
+        transform: rotateY(360deg) translateY(0px);
+    }
+}
+
+.profile-pic{
+    
+    height: 400px;
+    width: 360px;
+    padding: 20px;
+    animation-name:glow;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes glow {
+    0%{
+        transform: scale(1);
+        filter: grayscale(1);
+    }
+    50%{
+        transform: scale(0.87);
+        box-shadow: 2px 2px 5px gray;
+        filter: grayscale(0);
+    }
+    100%{
+        transform: scale(1);
+        filter: grayscale(1);
+
+    }
+    
+}
+
+/* skill section */
+.skills-outer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(231, 231, 231);
+}
