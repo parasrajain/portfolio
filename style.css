@@ -5,13 +5,14 @@
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 .wrapper{
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
 .nav-hero{
-    height: 100vh;
+    position: relative;
+    height: 100%;
     width: 100%;
 }
 
@@ -49,21 +50,21 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 
 /* hero section */
 .hero-outer{
-    width: 100vw;
-    height: 100%;
+    position: relative;
+    width: 100%;
    
 }
 .hero{
     position: relative;
     /* display: flex; */
     max-width: 75rem;
-    height: 100vh ;
+    height: 700px ;
     margin: auto;
 
 }
 .faded-Paras{
     position: absolute;
-    bottom: -61.5rem;
+    bottom: 0rem;
     left: 0rem;
     bottom: 4.1rem;
     user-select: none;
@@ -212,6 +213,233 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 /* skill section */
 .skills-outer{
     width: 100%;
-    height: 100vh;
+    height: 700px;
     background-color: rgb(231, 231, 231);
+    margin-top: -88px;
 }
+
+.skills{
+    display: flex;
+    max-width: 75rem;
+    align-items: center;
+    height: 700px;
+    /* justify-self: center; */
+    margin: auto;
+}
+
+.skill-left{
+    padding-left: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
+.skillimg{
+    overflow: hidden; /* Ensures the image is clipped to the circle */
+    border-radius: 50%; /* Makes the container a circle */
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; 
+  
+    overflow: hidden;
+}
+
+.cimg{
+    position: absolute;
+    /* display: flex; */
+    left: 177px;
+    bottom: 127px;
+    animation: crotate 15s linear infinite;
+}
+
+.cppimg{
+    position: absolute;
+    left: 177px;
+    bottom: 127px;
+    animation: cpprotate 15s linear infinite;
+}
+
+.htmlimg{
+    position: absolute;
+    left: 177px;
+    bottom: 127px;
+    animation: crotate 15s linear infinite;
+}
+ 
+
+.htmlimg{
+    position: absolute;
+    left: 177px;
+    bottom: 127px;
+    animation: htmlrotate 15s linear infinite;
+}
+
+.jsimg{
+    position: absolute;
+    left: 177px;
+    bottom: 127px;
+    animation: jsrotate 15s linear infinite;
+}
+
+.cssimg{
+    position: absolute;
+    left: 177px;
+    bottom: 127px;
+    animation: cssrotate 20s linear infinite;
+}
+
+.mongoimg{
+    position: absolute;
+    left: 177px;
+    bottom: 127px;
+    animation: mongorotate 20s linear infinite;
+}
+
+.expressimg{
+    position: absolute;
+    left: 177px;
+    bottom: 127px;
+    animation: expressrotate 20s linear infinite;
+}
+
+.githubimg{
+    position: absolute;
+    left: 177px;
+    bottom: 127px;
+    animation: gitrotate 20s linear infinite;
+}
+
+.nodeimg{
+    position: absolute;
+    left: 177px;
+    bottom: 127px;
+    animation: noderotate 20s linear infinite;
+}
+
+.reactimg{
+    position: absolute;
+    left: 177px;
+    bottom: 127px;
+    animation: reactrotate 20s linear infinite;
+}
+
+
+
+
+
+@keyframes crotate {
+    0%{
+        transform: rotate(0deg) translateX(180px) translateY(0px) rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg) translateX(180px) translateY(0px) rotate(-360deg);
+    }
+    
+}
+@keyframes htmlrotate {
+    0%{
+        transform: rotate(0deg) translateX(0px) translateY(180px) rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg) translateX(0px) translateY(180px) rotate(-360deg);
+    }
+    
+}
+
+@keyframes cpprotate {
+    0%{
+        transform: rotate(0deg) translateX(-180px) translateY(0px) rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg) translateX(-180px) translateY(0px)rotate(-360deg);
+    }
+    
+}
+
+@keyframes jsrotate {
+    0%{
+        transform: rotate(0deg) translateX(0px) translateY(-180px) rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg) translateX(0px) translateY(-180px)rotate(-360deg);
+    }
+    
+}
+
+@keyframes cssrotate {
+    0%{
+        transform: rotate(0deg) translateX(240px) translateY(0px) rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(-360deg) translateX(240px) translateY(0px) rotate(360deg);
+    }
+    
+}
+
+@keyframes mongorotate {
+    0%{
+        transform: rotate(0deg) translateX(120px) translateY(207.85px) rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(-360deg) translateX(120px) translateY(207.85px) rotate(360deg);
+    }
+    
+}
+
+@keyframes expressrotate {
+    0%{
+        transform: rotate(0deg) translateX(-120px) translateY(207.85px) rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(-360deg) translateX(-120px) translateY(207.85px) rotate(360deg);
+    }
+    
+}
+
+@keyframes gitrotate {
+    0%{
+        transform: rotate(0deg) translateX(-240px) translateY(0px) rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(-360deg) translateX(-240px) translateY(0px) rotate(360deg);
+    }
+    
+}
+
+@keyframes noderotate {
+    0%{
+        transform: rotate(0deg) translateX(-120px) translateY(-207.85px) rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(-360deg) translateX(-120px) translateY(-207.85px) rotate(360deg);
+    }
+    
+}
+
+@keyframes reactrotate {
+    0%{
+        transform: rotate(0deg) translateX(120px) translateY(-207.85px) rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(-360deg) translateX(120px) translateY(-207.85px) rotate(360deg);
+    }
+    
+}
+
+
+
+.skill-right{
+    width: 50%;
+
+}
+
