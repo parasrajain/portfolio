@@ -499,58 +499,162 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     height: 10px;
     width: 95%;
     background-color: blue;
+    animation: grow1 2s forwards;
 }
 
 .slider2{
     height: 10px;
     width: 95%;
     background-color: orangered;
+    animation: grow2 2s forwards;
 }
 
 .slider3{
     height: 10px;
     width: 96%;
     background-color: rgb(16, 135, 181);
+    animation: grow2 2s forwards;
 }
 
 .slider4{
     height: 10px;
     width: 99%;
     background-color: rgb(9, 99, 144);
+    animation: grow4 2s forwards;
 }
 
 .slider5{
     height: 10px;
     width: 90%;
     background-color: yellow;
+    animation: grow5 2s forwards;
 }
 
 .slider6{
     height: 10px;
     width: 2%;
     background-color: green;
+    animation: grow6 2s forwards;
 }
 
 .slider7{
     height: 10px;
     width: 2%;
     background-color: cyan;
+    animation: grow7 2s forwards;
 }
 
 .slider8{
     height: 10px;
     width: 2%;
     background-color: grey;
+    animation: grow8 2s forwards;
 }
 
 .slider9{
     height: 10px;
     width: 80%;
     background-color: black;
+    animation: grow9 2s forwards;
 }
 
 .slider10{
     height: 10px;
     width: 20%;
     background-color: green;
+    animation: grow10 2s forwards;
 }
+
+.slider1,.slider2,.slider3,.slider4,.slider5,.slider6,.slider7,.slider8,.slider9,.slider10{
+    border-radius: 40px / 70px; /* Horizontal and vertical radii */
+}
+
+@keyframes grow1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 95%; /* Final width of the div */
+    }
+  }
+
+  @keyframes grow2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 95% /* Final width of the div */
+    }
+  }
+
+  @keyframes grow3 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 96%; /* Final width of the div */
+    }
+  }
+
+  @keyframes grow4 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 99%; /* Final width of the div */
+    }
+  }
+
+  @keyframes grow5 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 90%; /* Final width of the div */
+    }
+  }
+
+  @keyframes grow6 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 2%; /* Final width of the div */
+    }
+  }
+
+  @keyframes grow7 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 2%; /* Final width of the div */
+    }
+  }
+
+  @keyframes grow8 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 2%; /* Final width of the div */
+    }
+  }
+
+  @keyframes grow9 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%; /* Final width of the div */
+    }
+  }
+
+  @keyframes grow10 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 2%; /* Final width of the div */
+    }
+  }
