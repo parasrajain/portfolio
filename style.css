@@ -273,18 +273,24 @@
 }
 
 .skill-left {
-  display: flex;
-  padding-left: 50px;
   position: relative;
-  justify-content: center;
+  display: flex;
+  /* padding-left: 50px; */
+  /* position: relative; */
   align-items: center;
+  justify-content: center;
 }
 .skillimg {
+  position: relative;
+  width: 300px;
+  height: 300px;
   overflow: hidden; /* Ensures the image is clipped to the circle */
   border-radius: 50%; /* Makes the container a circle */
   display: flex;
   align-items: center; /* Center the image vertically */
   justify-content: center;
+  margin-top: 40px;
+  margin-left: 40px;
 
   overflow: hidden;
 }
@@ -292,78 +298,112 @@
 .cimg {
   position: absolute;
   /* display: flex; */
-  left: 177px;
-  bottom: 127px;
+  top: 50%;
+  left: 50%;
+  height: 40px;
+  width: 40px;
+  transform: translate(-50px,-50%);
   animation: crotate 15s linear infinite;
 }
 
 .cppimg {
   position: absolute;
-  left: 177px;
-  bottom: 127px;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: cpprotate 15s linear infinite;
 }
 
 .htmlimg {
   position: absolute;
-  left: 177px;
-  bottom: 127px;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: crotate 15s linear infinite;
 }
 
 .htmlimg {
   position: absolute;
-  left: 177px;
-  bottom: 127px;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: htmlrotate 15s linear infinite;
 }
 
 .jsimg {
   position: absolute;
-  left: 177px;
-  bottom: 127px;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: jsrotate 15s linear infinite;
 }
 
 .cssimg {
   position: absolute;
-  left: 177px;
-  bottom: 127px;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: cssrotate 20s linear infinite;
 }
 
 .mongoimg {
   position: absolute;
-  left: 177px;
-  bottom: 127px;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: mongorotate 20s linear infinite;
 }
 
 .expressimg {
   position: absolute;
-  left: 177px;
-  bottom: 127px;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  
   animation: expressrotate 20s linear infinite;
 }
 
 .githubimg {
   position: absolute;
-  left: 177px;
-  bottom: 127px;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: gitrotate 20s linear infinite;
 }
 
 .nodeimg {
+  height: 40px;
+  width: 40px;
   position: absolute;
-  left: 177px;
-  bottom: 127px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: noderotate 20s linear infinite;
 }
 
 .reactimg {
+  height: 40px;
+  width: 40px;
   position: absolute;
-  left: 177px;
-  bottom: 127px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   animation: reactrotate 20s linear infinite;
 }
 
@@ -1337,20 +1377,45 @@ form p {
 
 @media only screen and (max-width: 1000px) {
   /* Styles for devices with a maximum width of 600px */
-  .skills{
-    flex-direction: column;
-    padding-top: 230px;
-    padding-bottom: 50px;
-    gap: 100px;
-  }
-  .faded-text{
-    opacity: 0;
-  }
+  
+  
 
   .aboutsec{
     flex-direction: column-reverse;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  
+
+  .info {
+    
+    justify-content: center;
+    align-items: start;
+    gap: 3.5rem;
+    width: 80%;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .skill-list{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1100px)
+{
+  .skills{
+    flex-direction: column;
+    padding-top: 230px;
+    padding-bottom: 50px;
+    gap: 150px;
+  }
+
+  .faded-text{
+    opacity: 0;
   }
   .faded-contact{
     opacity: 0;
@@ -1363,11 +1428,123 @@ form p {
   .faded-project{
     opacity: 0;
   }
+} 
 
-  .info {
-    
+@media only screen and (max-width: 550px){
+
+  .skillimg{
+    display: flex;
+    height:200px;
+    width:200px;
+    align-items: center;
     justify-content: center;
-    align-items: start;
-    gap: 3.5rem;
+    margin-top: 20px;
+  margin-left: 20px;
+    
+    
   }
+
+
+  .cimg,.cppimg,.cssimg,.htmlimg,.jsimg,.reactimg,.nodeimg,.expressimg,.mongoimg,.githubimg{
+    height:30px;
+    width:30px;
+  }
+
+
+  /* rotaion change */
+  
+  @keyframes crotate {
+    0% {
+      transform: rotate(0deg) translateX(130px) translateY(0px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(130px) translateY(0px) rotate(-360deg);
+    }
+  }
+  @keyframes htmlrotate {
+    0% {
+      transform: rotate(0deg) translateX(0px) translateY(130px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(0px) translateY(130px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes cpprotate {
+    0% {
+      transform: rotate(0deg) translateX(-130px) translateY(0px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(-130px) translateY(0px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes jsrotate {
+    0% {
+      transform: rotate(0deg) translateX(0px) translateY(-130px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(0px) translateY(-130px) rotate(-360deg);
+    }
+  }
+  
+  @keyframes cssrotate {
+    0% {
+      transform: rotate(0deg) translateX(180px) translateY(0px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg) translateX(180px) translateY(0px) rotate(360deg);
+    }
+  }
+  
+  @keyframes mongorotate {
+    0% {
+      transform: rotate(0deg) translateX(90px) translateY(155.88px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg) translateX(90px) translateY(155.88px)
+        rotate(360deg);
+    }
+  }
+  
+  @keyframes expressrotate {
+    0% {
+      transform: rotate(0deg) translateX(-90px) translateY(155.88px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg) translateX(-90px) translateY(155.88px)
+        rotate(360deg);
+    }
+  }
+  
+  @keyframes gitrotate {
+    0% {
+      transform: rotate(0deg) translateX(-180px) translateY(0px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg) translateX(-180px) translateY(0px) rotate(360deg);
+    }
+  }
+  
+  @keyframes noderotate {
+    0% {
+      transform: rotate(0deg) translateX(-90px) translateY(-155.88px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg) translateX(-90px) translateY(-155.88px)
+        rotate(360deg);
+    }
+  }
+  
+  @keyframes reactrotate {
+    0% {
+      transform: rotate(0deg) translateX(90px) translateY(-155.88px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg) translateX(90px) translateY(-155.88px)
+        rotate(360deg);
+    }
+  }
+
+
 }
