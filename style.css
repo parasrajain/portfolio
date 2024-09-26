@@ -77,8 +77,8 @@
 .aboutsec {
   display: flex;
   align-items: center;
-  min-height: 600px;
   justify-content: space-between;
+  min-height: 600px;
   padding: 0 4rem;
   /* padding-top: 3.5rem; */
 }
@@ -88,6 +88,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  height: 50%;
+  width: 100%;
   gap: 3.5rem;
 }
 
@@ -97,18 +99,23 @@
   font-weight: 600;
 }
 
-.intro {
+/* .intro {
   font-size: 25px;
-}
+} */
 
 .iam {
   font-weight: 800;
-  font-size: 50px;
+  font-size: 45px;
+  overflow: hidden;       /* Ensure content stays within the container */
+  white-space: nowrap;
 }
 .role {
   color: #4e45d5;
   font-weight: 800;
-  font-size: 50px;
+  font-size: 45px;
+  overflow: hidden;       /* Ensure content stays within the container */
+  white-space: nowrap;
+  
 }
 
 /* From Uiverse.io by Brian-Pob */
@@ -157,6 +164,7 @@
 }
 
 .cube-icon {
+  overflow: hidden; 
   position: absolute;
   z-index: 1;
   top: -0.3em;
@@ -167,6 +175,7 @@
 }
 
 .zigzag-icon {
+  overflow: hidden; 
   position: absolute;
   z-index: 10;
   top: 3em;
@@ -175,6 +184,7 @@
 }
 
 .dot-icon {
+  overflow: hidden; 
   z-index: 9;
   position: absolute;
   bottom: -2rem;
@@ -183,6 +193,25 @@
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
+
+.dot-icon-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.zigzag-icon-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cube-icon-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 @keyframes dotsAnimation {
   0% {
     transform: translateY(0px);
@@ -1382,17 +1411,21 @@ form p {
 
   .aboutsec{
     flex-direction: column-reverse;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
+    gap: 50px
+    ;
   }
   
 
   .info {
-    
+    display: flex;
+    margin: auto;
     justify-content: center;
-    align-items: start;
-    gap: 3.5rem;
-    width: 80%;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+    /* font-size: 70%; */
   }
 }
 
@@ -1547,4 +1580,50 @@ form p {
   }
 
 
+}
+
+
+@media only screen and (max-width: 1150px){
+  .iam,.role
+  {
+    font-size: 40px;
+    
+  }
+  .hello{
+    font-size: 35px;
+  }
+
+}
+
+@media only screen and (max-width: 1070px){
+  .iam,.role
+  {
+    font-size: 35px;
+  }
+
+  .hello{
+    font-size: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px){
+  
+.profile-pic{
+  height: 300px;
+  width: 270px;
+  padding: 16px;
+}
+.dot-icon{
+  height: 58px;
+  width: 90px;
+}
+.cube-icon{
+  height: 30px;
+  width: 30px;
+}
+.zigzag-icon{
+  height: 75px;
+  width: 31px;
+}
 }
