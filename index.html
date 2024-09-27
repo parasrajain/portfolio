@@ -7,36 +7,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="Home">
+
+
+
+      <div class="outer-nav">
+        <nav>
+          <div class="logo">
+              <h1>Paras Rajain</h1>
+          </div>
+          <ul id="menuList">
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#skills-outer">Skills</a></li>
+              <li><a href="#Project-id">Projects</a></li>
+              <!-- <li><a href="">Conta</a></li> -->
+              <li><a href="#contact-id">Contact</a></li>
+          </ul>
+          <div class="menu-icon">
+              <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+          </div>
+      </nav>
+      </div>
       <div class="nav-hero">
         <!-- nav bar -->
-        <div class="outer-nav">
-          <div class="nav">
-            <div class="name">Paras Rajain</div>
-            <div class="links">
-              <div class="home">
-                <a href="">Home</a>
-              </div>
-
-              <div class="home">
-                <a href="#skills-outer">Skills</a>
-              </div>
-
-              <div class="home">
-                <a href="#Project-id">Project</a>
-              </div>
-
-              <div class="home">
-                <a href="#contact-id">Contact</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         <!-- hero section -->
-        <div class="hero-outer">
-          <div class="hero">
-            
+        <div class="hero-outer"  >
+          <div class="hero" >
             <div class="aboutsec">
               <div class="faded-Paras">Paras Rajain</div>
               <div class="info">
@@ -54,22 +52,28 @@
                 <div class="cube-icon">
                   <img
                     src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/cube.png?alt=media&token=97f742ad-eec8-4298-a1c1-e82827ade604"
-                    alt="" class="cube-icon-img"
+                    alt=""
+                    class="cube-icon-img"
                     width="100%"
                     height="100%"
                   />
                 </div>
                 <div class="dot-icon">
-                  <img src="./images/dots.png" class="dot-icon-img" alt=""width="100%"
-                  height="100%"/>
-                </div>
-                <div class="zigzag-icon">
                   <img
-                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/zigzags.png?alt=media&token=48c9c028-b893-457a-8394-fb2a7aa31824" class="zigzag-icon-img"
+                    src="./images/dots.png"
+                    class="dot-icon-img"
                     alt=""
                     width="100%"
                     height="100%"
-                    
+                  />
+                </div>
+                <div class="zigzag-icon">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/zigzags.png?alt=media&token=48c9c028-b893-457a-8394-fb2a7aa31824"
+                    class="zigzag-icon-img"
+                    alt=""
+                    width="100%"
+                    height="100%"
                   />
                 </div>
                 <div class="profile-pic">
@@ -78,7 +82,6 @@
                     alt="Image"
                     width="100%"
                     height="100%"
-                    
                   />
                 </div>
               </div>
@@ -97,7 +100,7 @@
                 src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/skills.jpg?alt=media&token=55103860-b703-4901-8beb-c8c272d760ff"
                 alt="Image"
                 width="100%"
-                    height="100%"
+                height="100%"
                 height="300px"
                 width="300px"
               />
@@ -108,8 +111,7 @@
                 src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/c.png?alt=media&token=633bd194-5574-4cdb-b6ff-042830941d32"
                 alt=""
                 width="100%"
-                    height="100%"
-                
+                height="100%"
               />
             </div>
 
@@ -118,8 +120,7 @@
                 src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/cpp.png?alt=media&token=98199647-10fe-44c5-8672-ca6785ddb935"
                 alt=""
                 width="100%"
-                    height="100%"
-                
+                height="100%"
               />
             </div>
 
@@ -137,8 +138,7 @@
                 src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/html.png?alt=media&token=0fcddda2-b752-407c-905d-cd5dceb1e5bf"
                 alt=""
                 width="100%"
-                    height="100%"
-               
+                height="100%"
               />
             </div>
 
@@ -147,8 +147,7 @@
                 src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/javascript.png?alt=media&token=4825ca6b-4d4b-4401-a361-0031b3f0c3d1"
                 alt=""
                 width="100%"
-                    height="100%"
-                
+                height="100%"
               />
             </div>
 
@@ -157,7 +156,7 @@
                 src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/icons8-react-js-50.png?alt=media&token=83b36f35-5c13-473f-926b-79520e08a230"
                 alt=""
                 width="100%"
-                    height="100%"
+                height="100%"
               />
             </div>
 
@@ -166,7 +165,7 @@
                 src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/icons8-node-js-48.png?alt=media&token=86231958-7e21-4c66-913c-c5f383d6049f"
                 alt=""
                 width="100%"
-                    height="100%"
+                height="100%"
               />
             </div>
 
@@ -175,7 +174,7 @@
                 src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/icons8-express-js-48.png?alt=media&token=5cdf5879-f996-4f6d-931c-d3f3f9949698"
                 alt=""
                 width="100%"
-                    height="100%"
+                height="100%"
               />
             </div>
 
@@ -184,7 +183,7 @@
                 src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/icons8-mongodb-48.png?alt=media&token=f88009b8-a6b3-42ba-bab4-0b435a7da7c5"
                 alt=""
                 width="100%"
-                    height="100%"
+                height="100%"
               />
             </div>
 
@@ -193,7 +192,7 @@
                 src="https://firebasestorage.googleapis.com/v0/b/portfolio-bf6be.appspot.com/o/git.png?alt=media&token=ca8ce1c0-c694-4042-9110-03b366d0d1c5"
                 alt=""
                 width="100%"
-                    height="100%"
+                height="100%"
               />
             </div>
           </div>
@@ -346,9 +345,9 @@
 
       <!-- project section -->
       <div class="outer-project" id="Project-id">
-        <div class="project">
-          <div class="myproject-heading">My Projects</div>
+        <div class="project" >
           <div class="faded-project">Projects</div>
+          <div class="myproject-heading">My Projects</div>
 
           <!-- projects -->
           <div class="project-list">
@@ -542,8 +541,8 @@
       </div>
 
       <!-- contact section -->
-      <div class="outer-contact">
-        <div class="contact" id="contact-id">
+      <div class="outer-contact" id="contact-id">
+        <div class="contact" >
           <div class="faded-contact">Contact Me</div>
           <!-- container -->
           <div class="container">
@@ -568,7 +567,7 @@
                     <h2 class="lg-view">Contact Me</h2>
                     <h2 class="sm-view">Let's Chat</h2>
                     <p>* Required</p>
-                    <div class="social-container">
+                    <!-- <div class="social-container">
                       <a href="#" class="social"
                         ><i class="fab fa-facebook-f"></i
                       ></a>
@@ -578,12 +577,20 @@
                       <a href="#" class="social"
                         ><i class="fab fa-linkedin-in"></i
                       ></a>
-                    </div>
+                    </div> -->
                     <input type="text" name="Name" placeholder="Name *" />
-                    <input type="email"  name="eEmail" placeholder="Email *" />
+                    <input type="email" name="eEmail" placeholder="Email *" />
                     <!-- <input type="text" placeholder="Company" /> -->
-                    <input type="phone" name="Phone Number" placeholder="Phone" />
-                    <textarea rows="4" name="Message" placeholder="Message"></textarea>
+                    <input
+                      type="phone"
+                      name="Phone Number"
+                      placeholder="Phone"
+                    />
+                    <textarea
+                      rows="4"
+                      name="Message"
+                      placeholder="Message"
+                    ></textarea>
                     <!-- /* From Uiverse.io by KINGFRESS */ -->
 
                     <button class="sumbitbutton">
@@ -717,6 +724,23 @@
     </div>
 
     <!-- script -->
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "300px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typeData = new Typed(".role", {
